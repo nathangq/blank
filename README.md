@@ -28,9 +28,11 @@
 如何跑起来
 ----
 
-**安装**：mxnet1.0.0；faiss编译，按照faiss网页上安装说明来操作不难，注意在makefies.inc里面注明，有安装openblas的命令，以及要注明python cuda的路径.<br>
+**安装**：mxnet1.0.0；faiss编译，按照faiss网页上安装说明来操作不难，注意在makefies.inc里面注明，有安装openblas的命令，以及要注明python cuda的路径.
 <br>
-**数据集准备**：分别下载（底库／检索库）到特定目录，然后用 ls -1 | grep ".*$" > xxx.txt 获得图像的路径名称(这个需要在similar.py中关联路径）
+<br>
+**数据集准备**：分别下载（底库／检索库）到特定目录，然后用 ls -1 | grep ".*$" > xxx.txt 获得图像的路径名称(这个需要在similar.py中关联路径）.
+<br><br>
 **改写similar.py**：主要是路径，用的模型名称和取的层数，如果不用k8s，那么temp_pull.py中要改写不用最后的上传步骤。
 
 
