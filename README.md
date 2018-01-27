@@ -33,7 +33,8 @@
 <br>
 **数据集准备**：分别下载（底库／检索库）到特定目录，然后用 ls -1 | grep ".*$" > xxx.txt 获得图像的路径名称(这个需要在similar.py中关联路径）.
 <br><br>
-**改写similar.py**：主要是路径，用的模型名称和取的层数，如果不用k8s，那么temp_pull.py中要改写不用最后的上传步骤。
+**改写similar.py**：主要是路径，用的模型名称和取的层数，如果不用k8s，那么temp_pull.py中要改写,不用最后的上传步骤。 <br><br>
+**运行similar.py**：会按照temp_extraction.py， temp_faiss_index_query.py， temp_pull.py的顺序跑起。
 
 
 
